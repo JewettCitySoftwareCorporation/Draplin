@@ -1,149 +1,84 @@
-<html>
-    <head>
-        <title></title>
-        <style>
-            .mosaicflow__column {
-            float:left;
-            }
-            
-.mosaicflow__item {
-	position:relative;
-    width:100%;
-	}
-            .mosaicflow__item img {
-            display:block;
-            width:250px;
-            height:auto;
-            }
+<!DOCTYPE html>
+<html lang="en" >
 
-            .mosaicflow__item p {
-		position:absolute;
-		bottom:0;
-		left:0;
-		width:100%;
-		margin:0;
-		padding:5px;
-		background:hsla(0,0%,0%,.5);
-		color:#fff;
-		font-size:13px;
-		text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
-		opacity:0;
-		-webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		   -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		     -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		        transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		}
-	.mosaicflow__item:hover p {
-		opacity:1;
-		}
-        #photos {
-   /* Prevent vertical gaps */
-   line-height: 0;
-   
-   -webkit-column-count: 5;
-   -webkit-column-gap:   0px;
-   -moz-column-count:    5;
-   -moz-column-gap:      0px;
-   column-count:         5;
-   column-gap:           0px;
-}
+<head>
+  <meta charset="UTF-8">
+  <title>Draplin Design Co.</title>
+        <meta name="description" content="A template using the icon wall to showcase branding solutions.">
+        <meta name="author" content="Luke@JCSC.biz">
+        <!--  
+    
+                            
+                 ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+                ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+                ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+                |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+    
+         -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/side.css">
 
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-}
-@media (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
-  }
-}
-@media (max-width: 1000px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 400px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
-}
+  
+</head>
 
-body {
-  margin: 0;
-  padding: 0;
-}
+<body>
 
-        /**
- * Footer Styles
- */
-        
- .footer {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 0;
-            background-color: #efefef;
-            text-align: center;
-        }
-            </style>
-            
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-            <script src="jquery.mosaicflow.min.js"></script>
-            
-    </head>
-    <body>
-            <section id="photos">
-                <div class="clearfix mosaicflow" style="width:100%">
+  <header><span><img style="border: 0; height:50px;display: inline-block;" src="img/ddc.png" />
+    <h1 style="display: inline-block;">&nbsp;&nbsp;&nbsp;Draplin Design Co.</h1></span>
+</header>
 
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_02_110618.gif" alt="" /><p>2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Koll Guitar Company, 2015</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_08_042914.gif" alt="" /><p>Sasquatch Festival, 2013</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_06_042914.gif" alt="" /><p>Action Cap, 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Octopus, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_10_042914.gif" alt="" /><p>Sizzle Pie, 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Megafaun, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_04_042914.gif" alt="" /><p>Westwood One, 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Good Software, 2013</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_07_042914.gif" alt="" /><p>Safari Flow, 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Union Forged, 2013</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_05_042914.gif" alt="" /><p>Resoved Records, 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insieme, 2014</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_09_042914.gif" alt="" /><p>Union 10 Years, 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Union 10 Years, 2014</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_11_042914.gif" alt="" /><p>Patagonia, 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AOL Autos, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_12_042914.gif" alt="" /><p>United Pixelworkers, 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jax, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_13_042914.gif" alt="" /><p>Red Pop, 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beep Industries, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_14_042914.gif" alt="" /><p>Ten7, 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skookum Digital Works, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_15_042914.gif" alt="" /><p>Field & Stream, 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surf Collective, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_16_042914.gif" alt="" /><p>Brewery Outfitters, 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carmagnum, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_17_042914.gif" alt="" /><p>Junk Boys, 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lookout, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_18_042914.gif" alt="" /><p>CrowdCompass, 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conde Nast Interactive, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_19_042914.gif" alt="" /><p>Ellis, 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burnside Digital, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_20_042914.gif" alt="" /><p>Mike Basher Photo, 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nike Skateboarding, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_23_042914.gif" alt="" /><p>Chateau Grand Traverse, 2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philly Liberty Bell, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_22_042914.gif" alt="" /><p>Fiender, 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Herpetology Society, 2011</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/identity01_02_cobra.gif" alt="" /><p>Cobra Dogs, 2008&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cobra Dogs, 2008</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/identity01_08_flow_invisible.gif" alt="" /><p>Flow Snowboards, 2007&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invisible Garage, 2007</p></div>
-                                       
-                    
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/work_identity_21_042914.gif" alt=""><p>Editorially, 2013	The License Lab, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="250" src="img/work_identity_03_042914.gif" alt=""><p>Assembly, 2014	Peak Oil, 2012</p></div>
-                        <div class="mosaicflow__item"><img width="250" height="150" src="img/identity01_07_road_home.gif" alt="" /><p>DDC Road Div., 2007	DDC Shindig, 2007</p></div>
+<nav>
+  <ul>
+    <li><a href="#Draplin">Draplin&nbsp;Design&nbsp;Co.</a></li>
+    <li><a href="#SlideShow">&nbsp;&nbsp;&nbsp;&nbsp;Slide&nbsp;Show</a></li>
+    <li><a href="#IconWall">&nbsp;&nbsp;&nbsp;&nbsp;Icon&nbsp;Wall</a></li><br />
+    <li><a href="#ProjectLinks">&nbsp;&nbsp;&nbsp;&nbsp;Project&nbsp;Links:</a></li>
+  </ul>
+</nav>
 
-           </div></section>
-       <!-- This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div> -->
+<main>
+  <section id="Draplin"><br /><p>This template is an example utilizing the <a href="#IconWall">Icon Wall</a> template and thought helpful to provide a working template using it.</p><br />
+    <iframe width="100%" height="600px" frameBorder="0" src="http://www.draplin.com" ></iframe>
+  </section>
+  <section id="SlideShow">
+    <h1>A Presentation View:</h1><br /><br />
+    <iframe width="100%" height="600px" frameBorder="0" src="slides.html" ></iframe>
+    <p>The iconwall was the main priority of this project and thought it helpful to provide a couple templates using this template.</p>
+  </section>
+  <section id="IconWall">
+    <h1>Icon Wall</h1>
+    <iframe width="100%" height="480px" frameBorder="0" src="iconwall.html" ></iframe>
+    <p>This iconwall is the main point of this project, but provided a couple templates for using this template.</p>
+  </section>
+  <section id="ProjectLinks"><br /><br />
+      <h1>Project Resources:</h1>
+     <center>
+       <ul style="list-style-type: none;"><br /><br /><br >
+         <li><a href="slides.html" target="_blank"><img height="20px" src="https://img.shields.io/badge/Project%20Page:-Slide%20Show.html-purple" /></a></li>
+         <li><a href="iconwall.html" target="_blank"><img height="20px" src="https://img.shields.io/badge/Project%20Page:-Icon%20Wall.html%20%20%20%20-purple" /></a></li>
+         <li><a href="#You_Are_Here" target="_blank"><img height="20px" src="https://img.shields.io/badge/This%20Page:-index.html-purple" /></a></li>
+         <br /><br /><br /><br /><br />
+         <li><a href="http://www.draplin.com" target="_blank"><img height="35px" src="https://img.shields.io/badge/Branding%20Solutions%20By:-Draplin%20Design%20Co.-orange" /></a></li>
+       </ul>
+     </center>>
+    </section>
 
-       <div class="footer">
-            <small>
-                    ©️ 2019 <a href="http://www.draplin.com"><img height="15px" src="https://img.shields.io/badge/Branding%20Solutions%20By:-Draplin%20Design%20Co.-orange" /></a>  ✨  <a href="http://jcsc.biz"><img height="15px" src="https://img.shields.io/badge/Software%20Development%20By:-Luke%40jcsc.biz-blue" /></a>
-				</small></div>
-    </body>
+  
+</main>
+
+<div class="footer">
+    <small>
+            ©️ 2019 <a href="http://www.draplin.com"><img height="15px" src="https://img.shields.io/badge/Branding%20Solutions%20By:-Draplin%20Design%20Co.-orange" /></a>  ✨  <a href="http://jcsc.biz"><img height="15px" src="https://img.shields.io/badge/Software%20Development%20By:-Luke%40jcsc.biz-blue" /></a>
+</small></div>
+  
+  
+
+    <script  src="js/side.js"></script>
+
+
+
+
+</body>
+
 </html>
